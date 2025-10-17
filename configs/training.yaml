@@ -1,0 +1,191 @@
+# Training Configuration for Adelaide Weather Forecasting
+
+# Experiment Setup
+experiment:
+  name: 'adelaide_analog_forecast'
+  description: 'CNN encoder + analog ensemble for Adelaide weather forecasting'
+  tags: ['weather', 'analog', 'embedding', 'adelaide']
+  
+# Hardware Configuration
+device:
+  # GPU settings
+  use_gpu: true
+  gpu_id: 0
+  mixed_precision: true  # Use automatic mixed precision
+  
+  # CPU settings
+  num_workers: 8
+  pin_memory: true
+
+# Data Loading
+data:
+  # Batch configuration
+  train_batch_size: 64
+  val_batch_size: 128
+  test_batch_size: 256
+  
+  # Data augmentation
+  augmentation:
+    enabled: true
+    methods:
+      - 'gaussian_noise'  # Add small amount of noise
+      - 'temporal_jitter'  # Small time shifts
+    
+    noise_std: 0.01
+    time_jitter_hours: 1
+    
+  # Shuffling and sampling
+  shuffle_train: true
+  drop_last: true
+
+# Model Training
+model:
+  # Architecture variants per lead time
+  per_lead_models: true
+  shared_encoder: false  # Train separate encoders per lead time
+  
+  # Model initialization
+  init_strategy: 'kaiming_normal'
+  
+  # Regularization
+  dropout: 0.1
+  layer_norm: true
+
+# Optimization
+optimizer:
+  name: 'adamw'
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  betas: [0.9, 0.999]
+  eps: 1e-8
+
+# Learning Rate Scheduling
+scheduler:
+  name: 'cosine_annealing'
+  
+  # Warmup
+  warmup_epochs: 5
+  warmup_strategy: 'linear'
+  
+  # Cosine annealing
+  T_max: 100
+  eta_min: 1e-7
+  
+  # Step decay (alternative)
+  step_decay:
+    enabled: false
+    step_size: 30
+    gamma: 0.1
+
+# Loss Function
+loss:
+  # Contrastive learning
+  contrastive_weight: 1.0
+  
+  # Additional losses
+  reconstruction_loss:
+    enabled: false
+    weight: 0.1
+    
+  # Multi-scale loss
+  multiscale:
+    enabled: true
+    scales: [1, 2, 4]
+    weights: [1.0, 0.5, 0.25]
+
+# Training Loop
+training_loop:
+  max_epochs: 100
+  eval_every: 1  # epochs
+  save_every: 10  # epochs
+  
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 15
+    min_delta: 1e-5
+    monitor: 'val_contrastive_loss'
+    mode: 'min'
+    
+  # Gradient handling
+  gradient_clipping:
+    enabled: true
+    max_norm: 1.0
+    
+  # Checkpointing
+  checkpoint:
+    save_best: true
+    save_last: true
+    save_top_k: 3
+
+# Validation
+validation:
+  # Validation frequency
+  val_check_interval: 1.0  # Check at end of each epoch
+  
+  # Validation metrics
+  metrics:
+    - 'contrastive_loss'
+    - 'embedding_similarity'
+    - 'retrieval_accuracy'
+    
+  # Validation monitoring
+  monitor_metric: 'val_contrastive_loss'
+
+# Logging and Monitoring
+logging:
+  # Experiment tracking
+  use_wandb: false  # Set to true if wandb available
+  use_tensorboard: true
+  
+  # Log frequency
+  log_every_n_steps: 100
+  
+  # What to log
+  log_gradients: false
+  log_weights: false
+  log_learning_rate: true
+  
+  # Validation logging
+  log_val_predictions: true
+  num_val_samples_to_log: 16
+
+# Model Saving
+checkpointing:
+  # Directory structure
+  checkpoint_dir: 'models/checkpoints'
+  
+  # Save configuration
+  save_hyperparameters: true
+  save_optimizer_state: true
+  
+  # Model versioning
+  version_control: true
+
+# Resume Training
+resume:
+  # Resume settings
+  auto_resume: true
+  checkpoint_path: null  # Set to specific path if needed
+  
+  # What to resume
+  resume_optimizer: true
+  resume_scheduler: true
+  resume_epoch: true
+
+# Distributed Training (for future scaling)
+distributed:
+  enabled: false
+  backend: 'nccl'
+  world_size: 1
+  rank: 0
+
+# Profiling and Debugging
+profiling:
+  enabled: false
+  profile_memory: false
+  profile_compute: false
+  
+  # Debug settings
+  debug_mode: false
+  fast_dev_run: false  # For quick testing

@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Training outputs
+outputs/
+*.log
+training_output.log
+training_simple.log
+training_fixed.log
+era5_*.log
+organize_grib_data.log
+
+# Data files (too large for git)
+data/
+*.zarr/
+*.grib2
+*.grb
+*.nc
+
+# Compressed packages
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model checkpoints (can be large)
+*.pt
+*.pth
+models/*.pt
+models/*.pth
+
+# API credentials
+.cdsapirc
+credentials.json
+
+# Temporary files
+tmp/
+temp/

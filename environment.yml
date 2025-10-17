@@ -1,0 +1,22 @@
+name: weather-forecast
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.*
+  - scipy=1.11.*        # last series tested widely with numpy 1.26
+  - pandas=2.2.*        # works with numpy 1.26
+  - xarray=2024.02.*    # pre-NumPy-2-only changes; still 1.x-friendly
+  - dask=2024.2.*       # optional
+  - netcdf4             # conda-forge build matched to hdf5
+  - h5netcdf
+  - h5py
+  - zarr                # if using zarr
+  - pytorch=2.5.*
+  - pytorch-cuda=12.1   # brings CUDA 12.1 runtime; don't also add cudatoolkit
+  - faiss-gpu=1.8.*
+  - cdsapi              # for ERA5 downloads
+  - pyyaml              # for configuration files
+  - pip

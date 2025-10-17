@@ -1,0 +1,172 @@
+# Model Configuration for Adelaide Weather Forecasting
+
+# CNN Encoder Architecture
+encoder:
+  # Input dimensions
+  input_shape: [21, 21, 11]  # [H, W, C] - Adelaide region 21×21 grid, 11 variables
+  
+  # Encoder architecture  
+  architecture:
+    # 4-stage CNN encoder
+    stage1:
+      filters: 32
+      kernel_size: 5
+      stride: 2
+      padding: 'same'
+      activation: 'relu'
+      batch_norm: true
+      
+    stage2:
+      filters: 64
+      kernel_size: 3
+      stride: 2
+      padding: 'same'
+      activation: 'relu'
+      batch_norm: true
+      
+    stage3:
+      filters: 128
+      kernel_size: 3
+      stride: 2
+      padding: 'same'
+      activation: 'relu'
+      batch_norm: true
+      
+    stage4:
+      filters: 256
+      kernel_size: 3
+      stride: 2
+      padding: 'same'
+      activation: 'relu'
+      batch_norm: true
+      
+  # ASPP (Atrous Spatial Pyramid Pooling) module
+  aspp:
+    dilation_rates: [6, 12, 18]
+    filters: 256
+    
+  # Global context token
+  global_context:
+    enabled: true
+    token_dim: 256
+    
+  # Final embedding dimension
+  embedding_dim: 256
+
+# FiLM conditioning
+film:
+  # Lead time conditioning
+  lead_time_embedding:
+    max_lead: 72
+    embedding_dim: 64
+    
+  # Seasonal conditioning  
+  seasonal_embedding:
+    enabled: true
+    embedding_dim: 32
+    features: ['month', 'hour']
+    
+  # FiLM layer placement
+  film_layers: [1, 2, 3, 4]  # Apply after these stages
+
+# Contrastive Learning
+contrastive:
+  # InfoNCE loss
+  temperature: 0.07
+  
+  # Negative sampling
+  num_negatives: 64
+  
+  # Positive pairs strategy
+  positive_strategy: 'temporal'  # 'temporal', 'spatial', 'both'
+  temporal_window: 24  # hours for positive pairs
+
+# Training Configuration
+training:
+  # Data splits
+  train_years: [2010, 2018]
+  val_years: [2019]
+  test_years: [2020]
+  
+  # Per-lead time models
+  lead_times: [6, 12, 24, 48, 72]
+  
+  # Training hyperparameters
+  batch_size: 64
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  
+  # Optimization
+  optimizer: 'adamw'
+  scheduler: 'cosine'
+  warmup_epochs: 5
+  max_epochs: 100
+  
+  # Early stopping
+  patience: 10
+  min_delta: 1e-5
+
+# FAISS Configuration
+faiss:
+  # Index type
+  index_type: 'IndexFlatIP'  # Inner product for normalized embeddings
+  
+  # GPU settings
+  gpu_index: 0
+  
+  # Retrieval settings
+  num_analogs: 30
+  
+  # Embedding preprocessing
+  normalize_embeddings: true
+
+# Analog Ensemble
+analog_ensemble:
+  # Weighting scheme
+  weighting: 'rank'  # 'rank', 'distance', 'uniform'
+  rank_power: 0.5   # w_i = 1/i^rank_power
+  
+  # Distance metric
+  distance_metric: 'cosine'  # 'cosine', 'euclidean', 'learned'
+  
+  # Ensemble size
+  ensemble_size: 30
+  
+  # Post-processing
+  bias_correction: true
+  variance_inflation: 1.1
+
+# Baseline Models
+baselines:
+  persistence:
+    enabled: true
+    
+  climatology:
+    enabled: true
+    smoothing_window: 30  # days
+    
+  simple_analog:
+    enabled: true
+    num_analogs: 50
+    distance_metric: 'l2'
+    variables: ['z500', 'mslp', 't850']
+
+# Evaluation Metrics
+metrics:
+  # Primary metrics
+  primary: ['rmse', 'mae', 'bias']
+  
+  # Additional metrics
+  secondary: ['correlation', 'nse', 'kge']
+  
+  # Probabilistic metrics
+  probabilistic: ['crps', 'reliability', 'resolution']
+  
+  # Variables to evaluate
+  eval_variables: ['2m_temperature', 'total_precipitation']
+  
+  # Spatial evaluation
+  eval_points: 
+    adelaide_city: [-34.9285, 138.6007]
+    adelaide_airport: [-34.9462, 138.5311]
+    adelaide_hills: [-35.0, 138.7]

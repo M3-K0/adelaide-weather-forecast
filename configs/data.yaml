@@ -1,0 +1,74 @@
+# Data Configuration for Adelaide Weather Forecasting
+adelaide:
+  lat: -34.9
+  lon: 138.6
+  
+era5:
+  # Variables for analog ensemble
+  variables:
+    - 'geopotential'         # z500 
+    - 'mean_sea_level_pressure'  # mslp
+    - 'temperature'          # t850
+    - 'specific_humidity'    # q850  
+    - 'u_component_of_wind'  # u850, u10
+    - 'v_component_of_wind'  # v850, v10
+    - '2m_temperature'       # t2m
+    - 'total_precipitation'  # tp
+    - 'convective_available_potential_energy'  # cape
+    
+  pressure_levels:
+    - 500   # geopotential
+    - 850   # temperature, humidity, wind
+  
+  surface_vars:
+    - '10m_u_component_of_wind'
+    - '10m_v_component_of_wind' 
+    - '2m_temperature'
+    - 'total_precipitation'
+    - 'convective_available_potential_energy'
+    
+  # Spatial domain around Adelaide
+  area: [-32.4, 136.1, -37.4, 141.1]  # [N, W, S, E] 25°×25° box
+  
+  # Temporal range
+  years: [2010, 2020]
+  time_range: '00:00/23:00'
+  
+  # Output settings
+  format: 'netcdf'
+  grid: [0.25, 0.25]
+
+gfs:
+  # GFS for real-time operational forecasting
+  variables:
+    - 'HGT:500 mb'      # geopotential height
+    - 'PRMSL:mean sea level'  # pressure
+    - 'TMP:850 mb'      # temperature
+    - 'SPFH:850 mb'     # specific humidity
+    - 'UGRD:850 mb'     # u-wind
+    - 'VGRD:850 mb'     # v-wind
+    - 'UGRD:10 m above ground'  # u-wind 10m
+    - 'VGRD:10 m above ground'  # v-wind 10m
+    - 'TMP:2 m above ground'    # 2m temperature
+    - 'APCP:surface'    # precipitation
+    - 'CAPE:surface'    # convective potential
+    
+  # Forecast leads for training/validation
+  lead_times: [6, 12, 24, 48, 72]  # hours
+  
+  # Domain same as ERA5  
+  bbox: [-32.4, 136.1, -37.4, 141.1]
+  resolution: 0.25
+
+preprocessing:
+  # Normalization parameters
+  normalize_method: 'zscore'  # or 'minmax'
+  
+  # Spatial regridding
+  target_resolution: 0.25
+  
+  # Temporal aggregation
+  time_step: 'H'  # hourly
+  
+  # Missing data handling
+  fill_method: 'interpolate'

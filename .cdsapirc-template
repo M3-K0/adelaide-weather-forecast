@@ -1,0 +1,9 @@
+url: https://cds.climate.copernicus.eu/api
+key: YOUR_UID:YOUR_API_KEY
+
+# Instructions:
+# 1. Register at https://cds.climate.copernicus.eu/user/register
+# 2. Get your UID and API key from https://cds.climate.copernicus.eu/how-to-api
+# 3. Copy this file to ~/.cdsapirc 
+# 4. Replace YOUR_UID:YOUR_API_KEY with your actual credentials
+# 5. Run: chmod 600 ~/.cdsapirc
