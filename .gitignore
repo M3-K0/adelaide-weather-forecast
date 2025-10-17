@@ -39,7 +39,6 @@ era5_*.log
 organize_grib_data.log
 
 # Data files (too large for git)
-data/
 *.zarr/
 *.grib2
 *.grb
