@@ -1,0 +1,17 @@
+2025-10-16 20:42:44,033 - INFO - Starting ERA5 yearly download for Adelaide weather forecasting
+2025-10-16 20:42:44,037 - INFO - Configuration loaded successfully
+2025-10-16 20:42:44,933 - INFO - CDS API client initialized successfully
+2025-10-16 20:42:44,934 - INFO - Download configuration:
+2025-10-16 20:42:44,934 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:42:44,934 - INFO -   Years: 2010-2020
+2025-10-16 20:42:44,934 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:42:44,934 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:42:45,789 - ERROR - ✗ Failed to download era5_pressure_2010.nc: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:43:19,679 - ERROR - ✗ Failed to download era5_pressure_2011.nc: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:43:53,281 - ERROR - ✗ Failed to download era5_pressure_2012.nc: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.

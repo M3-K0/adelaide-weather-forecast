@@ -1,0 +1,180 @@
+2025-10-17 09:22:01,471 - INFO - Starting ERA5 GRIB data organization
+2025-10-17 09:22:01,471 - INFO - Working directory: /home/micha/weather-forecast
+2025-10-17 09:22:01,472 - INFO - 
+============================================================
+2025-10-17 09:22:01,472 - INFO - PROCESSING SURFACE DATA
+2025-10-17 09:22:01,472 - INFO - ============================================================
+2025-10-17 09:22:01,472 - INFO - Processing surface level data...
+2025-10-17 09:22:01,472 - INFO - Loading Surface levels 2010-2019: data/e88d1a9e3f212150503ffccf17bdf35a single levels 2010 to 2019/data.grib
+2025-10-17 09:22:01,754 - WARNING - Ignoring index file 'data/e88d1a9e3f212150503ffccf17bdf35a single levels 2010 to 2019/data.grib.5b7b6.idx' incompatible with GRIB file
+2025-10-17 09:22:34,827 - ERROR - skipping variable: paramId==228 shortName='tp'
+Traceback (most recent call last):
+  File "/home/micha/miniforge3/envs/weather-forecast/lib/python3.10/site-packages/cfgrib/dataset.py", line 726, in build_dataset_components
+    dict_merge(variables, coord_vars)
+  File "/home/micha/miniforge3/envs/weather-forecast/lib/python3.10/site-packages/cfgrib/dataset.py", line 642, in dict_merge
+    raise DatasetBuildError(
+cfgrib.dataset.DatasetBuildError: key present and new value is different: key='time' value=Variable(dimensions=('time',), data=array([1262304000, 1262325600, 1262347200, ..., 1577772000, 1577793600,
+       1577815200])) new_value=Variable(dimensions=('time',), data=array([1262282400, 1262325600, 1262368800, ..., 1577685600, 1577728800,
+       1577772000]))
+2025-10-17 09:24:03,217 - INFO -   Added precipitation data with time alignment
+2025-10-17 09:24:03,217 - INFO -   Variables: ['u10', 'v10', 't2m', 'msl', 'tp']
+2025-10-17 09:24:03,218 - INFO -   Time range: 2009-12-31T18:00:00.000000000 to 2019-12-31T18:00:00.000000000
+2025-10-17 09:24:03,218 - INFO -   Shape: {'time': 14609, 'latitude': 21, 'longitude': 21, 'step': 2}
+2025-10-17 09:24:03,223 - INFO - Loading Surface December 2020: data/194b9ab1760177368a142890bde3da14 single level december 2020/data.grib
+2025-10-17 09:24:27,697 - INFO - Starting ERA5 GRIB data organization
+2025-10-17 09:24:27,697 - INFO - Working directory: /home/micha/weather-forecast
+2025-10-17 09:24:27,697 - INFO - 
+============================================================
+2025-10-17 09:24:27,698 - INFO - PROCESSING SURFACE DATA
+2025-10-17 09:24:27,698 - INFO - ============================================================
+2025-10-17 09:24:27,698 - INFO - Processing surface level data...
+2025-10-17 09:24:27,698 - INFO - Loading Surface levels 2010-2019: data/e88d1a9e3f212150503ffccf17bdf35a single levels 2010 to 2019/data.grib
+2025-10-17 09:24:28,131 - INFO -   Main variables: ['msl']
+2025-10-17 09:24:29,014 - INFO -   Loading precipitation separately...
+2025-10-17 09:24:32,622 - INFO -   No precipitation data or failed to load: No module named 'scipy'
+2025-10-17 09:24:32,622 - INFO -   Final variables: ['msl']
+2025-10-17 09:24:32,623 - INFO -   Time range: 2010-01-01T00:00:00.000000000 to 2019-12-31T18:00:00.000000000
+2025-10-17 09:24:32,623 - INFO -   Shape: {'time': 14608, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:24:32,629 - INFO - Loading Surface December 2020: data/194b9ab1760177368a142890bde3da14 single level december 2020/data.grib
+2025-10-17 09:24:32,949 - INFO -   Main variables: ['msl']
+2025-10-17 09:24:32,954 - INFO -   Loading precipitation separately...
+2025-10-17 09:24:32,987 - INFO -   No precipitation data or failed to load: No module named 'scipy'
+2025-10-17 09:24:32,987 - INFO -   Final variables: ['msl']
+2025-10-17 09:24:32,988 - INFO -   Time range: 2020-12-01T00:00:00.000000000 to 2020-12-31T18:00:00.000000000
+2025-10-17 09:24:32,988 - INFO -   Shape: {'time': 124, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:24:32,988 - INFO - Loading NetCDF: era5_surface_2020_01.nc
+2025-10-17 09:24:32,990 - WARNING - Failed to load data/era5/surface/era5_surface_2020_01.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,990 - INFO - Loading NetCDF: era5_surface_2020_02.nc
+2025-10-17 09:24:32,991 - WARNING - Failed to load data/era5/surface/era5_surface_2020_02.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,991 - INFO - Loading NetCDF: era5_surface_2020_03.nc
+2025-10-17 09:24:32,992 - WARNING - Failed to load data/era5/surface/era5_surface_2020_03.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,992 - INFO - Loading NetCDF: era5_surface_2020_04.nc
+2025-10-17 09:24:32,992 - WARNING - Failed to load data/era5/surface/era5_surface_2020_04.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,992 - INFO - Loading NetCDF: era5_surface_2020_05.nc
+2025-10-17 09:24:32,993 - WARNING - Failed to load data/era5/surface/era5_surface_2020_05.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,993 - INFO - Loading NetCDF: era5_surface_2020_06.nc
+2025-10-17 09:24:32,994 - WARNING - Failed to load data/era5/surface/era5_surface_2020_06.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,994 - INFO - Loading NetCDF: era5_surface_2020_07.nc
+2025-10-17 09:24:32,994 - WARNING - Failed to load data/era5/surface/era5_surface_2020_07.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,995 - INFO - Loading NetCDF: era5_surface_2020_08.nc
+2025-10-17 09:24:32,995 - WARNING - Failed to load data/era5/surface/era5_surface_2020_08.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,995 - INFO - Loading NetCDF: era5_surface_2020_09.nc
+2025-10-17 09:24:32,997 - WARNING - Failed to load data/era5/surface/era5_surface_2020_09.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,997 - INFO - Loading NetCDF: era5_surface_2020_10.nc
+2025-10-17 09:24:32,999 - WARNING - Failed to load data/era5/surface/era5_surface_2020_10.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:32,999 - INFO - Loading NetCDF: era5_surface_2020_11.nc
+2025-10-17 09:24:33,000 - WARNING - Failed to load data/era5/surface/era5_surface_2020_11.nc: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'h5netcdf', 'cfgrib', 'zarr']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:
+https://docs.xarray.dev/en/stable/getting-started-guide/installing.html
+https://docs.xarray.dev/en/stable/user-guide/io.html
+2025-10-17 09:24:33,000 - INFO - Combining surface datasets...
+2025-10-17 09:24:36,530 - INFO - Combined surface dataset: {'time': 14732, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:24:36,531 - INFO - Time range: 2010-01-01T00:00:00.000000000 to 2020-12-31T18:00:00.000000000
+2025-10-17 09:24:36,531 - INFO - Variables: ['msl']
+2025-10-17 09:24:36,538 - INFO - Saving surface to Zarr: data/era5/zarr/era5_surface_2010_2020.zarr
+2025-10-17 09:24:36,538 - INFO -   msl: chunks = {'time': 1460, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:24:36,538 - INFO - Writing to disk...
+2025-10-17 09:26:13,645 - INFO - Starting ERA5 GRIB data organization
+2025-10-17 09:26:13,646 - INFO - Working directory: /home/micha/weather-forecast
+2025-10-17 09:26:13,646 - INFO - 
+============================================================
+2025-10-17 09:26:13,646 - INFO - PROCESSING SURFACE DATA
+2025-10-17 09:26:13,646 - INFO - ============================================================
+2025-10-17 09:26:13,646 - INFO - Processing surface level data...
+2025-10-17 09:26:13,646 - INFO - Loading Surface levels 2010-2019: data/e88d1a9e3f212150503ffccf17bdf35a single levels 2010 to 2019/data.grib
+2025-10-17 09:26:14,037 - INFO -   Main variables: ['msl']
+2025-10-17 09:26:14,245 - INFO -   Loading precipitation separately...
+2025-10-17 09:26:18,341 - INFO -   No precipitation data or failed to load: dimension coordinate 'step' conflicts between indexed and indexing objects:
+<xarray.DataArray 'step' (step: 2)> Size: 16B
+array([21600000000000, 43200000000000], dtype='timedelta64[ns]')
+Coordinates:
+    number   int64 8B 0
+  * step     (step) timedelta64[ns] 16B 06:00:00 12:00:00
+    surface  float64 8B 0.0
+Attributes:
+    long_name:      time since forecast_reference_time
+    standard_name:  forecast_period
+    dtype:          timedelta64[ns]
+vs.
+<xarray.Variable ()> Size: 8B
+[1 values with dtype=timedelta64[ns]]
+Attributes:
+    long_name:      time since forecast_reference_time
+    standard_name:  forecast_period
+    dtype:          timedelta64[ns]
+2025-10-17 09:26:18,341 - INFO -   Final variables: ['msl']
+2025-10-17 09:26:18,342 - INFO -   Time range: 2010-01-01T00:00:00.000000000 to 2019-12-31T18:00:00.000000000
+2025-10-17 09:26:18,342 - INFO -   Shape: {'time': 14608, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:26:18,348 - INFO - Loading Surface December 2020: data/194b9ab1760177368a142890bde3da14 single level december 2020/data.grib
+2025-10-17 09:26:18,352 - INFO -   Main variables: ['msl']
+2025-10-17 09:26:18,357 - INFO -   Loading precipitation separately...
+2025-10-17 09:26:18,391 - INFO -   No precipitation data or failed to load: dimension coordinate 'step' conflicts between indexed and indexing objects:
+<xarray.DataArray 'step' (step: 2)> Size: 16B
+array([21600000000000, 43200000000000], dtype='timedelta64[ns]')
+Coordinates:
+    number   int64 8B 0
+  * step     (step) timedelta64[ns] 16B 06:00:00 12:00:00
+    surface  float64 8B 0.0
+Attributes:
+    long_name:      time since forecast_reference_time
+    standard_name:  forecast_period
+    dtype:          timedelta64[ns]
+vs.
+<xarray.Variable ()> Size: 8B
+[1 values with dtype=timedelta64[ns]]
+Attributes:
+    long_name:      time since forecast_reference_time
+    standard_name:  forecast_period
+    dtype:          timedelta64[ns]
+2025-10-17 09:26:18,391 - INFO -   Final variables: ['msl']
+2025-10-17 09:26:18,392 - INFO -   Time range: 2020-12-01T00:00:00.000000000 to 2020-12-31T18:00:00.000000000
+2025-10-17 09:26:18,392 - INFO -   Shape: {'time': 124, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:26:18,392 - INFO - Loading NetCDF: era5_surface_2020_01.nc
+2025-10-17 09:26:18,469 - WARNING - Failed to load data/era5/surface/era5_surface_2020_01.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,469 - INFO - Loading NetCDF: era5_surface_2020_02.nc
+2025-10-17 09:26:18,471 - WARNING - Failed to load data/era5/surface/era5_surface_2020_02.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,471 - INFO - Loading NetCDF: era5_surface_2020_03.nc
+2025-10-17 09:26:18,472 - WARNING - Failed to load data/era5/surface/era5_surface_2020_03.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,473 - INFO - Loading NetCDF: era5_surface_2020_04.nc
+2025-10-17 09:26:18,474 - WARNING - Failed to load data/era5/surface/era5_surface_2020_04.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,474 - INFO - Loading NetCDF: era5_surface_2020_05.nc
+2025-10-17 09:26:18,476 - WARNING - Failed to load data/era5/surface/era5_surface_2020_05.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,476 - INFO - Loading NetCDF: era5_surface_2020_06.nc
+2025-10-17 09:26:18,477 - WARNING - Failed to load data/era5/surface/era5_surface_2020_06.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,478 - INFO - Loading NetCDF: era5_surface_2020_07.nc
+2025-10-17 09:26:18,479 - WARNING - Failed to load data/era5/surface/era5_surface_2020_07.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,480 - INFO - Loading NetCDF: era5_surface_2020_08.nc
+2025-10-17 09:26:18,481 - WARNING - Failed to load data/era5/surface/era5_surface_2020_08.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,481 - INFO - Loading NetCDF: era5_surface_2020_09.nc
+2025-10-17 09:26:18,483 - WARNING - Failed to load data/era5/surface/era5_surface_2020_09.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,483 - INFO - Loading NetCDF: era5_surface_2020_10.nc
+2025-10-17 09:26:18,484 - WARNING - Failed to load data/era5/surface/era5_surface_2020_10.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,484 - INFO - Loading NetCDF: era5_surface_2020_11.nc
+2025-10-17 09:26:18,486 - WARNING - Failed to load data/era5/surface/era5_surface_2020_11.nc: Unable to synchronously open file (file signature not found)
+2025-10-17 09:26:18,486 - INFO - Combining surface datasets...
+2025-10-17 09:26:22,524 - INFO - Combined surface dataset: {'time': 14732, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:26:22,525 - INFO - Time range: 2010-01-01T00:00:00.000000000 to 2020-12-31T18:00:00.000000000
+2025-10-17 09:26:22,525 - INFO - Variables: ['msl']
+2025-10-17 09:26:22,532 - INFO - Saving surface to Zarr: data/era5/zarr/era5_surface_2010_2020.zarr
+2025-10-17 09:26:22,534 - INFO - Removed existing data/era5/zarr/era5_surface_2010_2020.zarr
+2025-10-17 09:26:22,534 - INFO -   msl: chunks = {'time': 1460, 'latitude': 21, 'longitude': 21}
+2025-10-17 09:26:22,534 - INFO - Writing to disk...

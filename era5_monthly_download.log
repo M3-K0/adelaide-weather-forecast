@@ -1,0 +1,265 @@
+2025-10-16 20:20:03,428 - INFO - Test mode: downloading January 2020 only
+2025-10-16 20:20:03,428 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:20:03,431 - INFO - Configuration loaded successfully
+2025-10-16 20:20:04,387 - INFO - CDS API client initialized successfully
+2025-10-16 20:20:04,389 - INFO - Download configuration:
+2025-10-16 20:20:04,389 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:20:04,389 - INFO -   Years: 2020-2020
+2025-10-16 20:20:33,452 - INFO - Test mode: downloading January 2020 only
+2025-10-16 20:20:33,452 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:20:33,455 - INFO - Configuration loaded successfully
+2025-10-16 20:20:34,628 - INFO - CDS API client initialized successfully
+2025-10-16 20:20:34,628 - INFO - Download configuration:
+2025-10-16 20:20:34,628 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:20:34,628 - INFO -   Years: 2020-2020
+2025-10-16 20:20:34,628 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:20:34,628 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:20:34,629 - INFO - 
+--- Processing 2020-01 (1/12) ---
+2025-10-16 20:20:34,629 - INFO - Downloading era5_pressure_2020_01.nc...
+2025-10-16 20:20:34,629 - INFO -   Variables: 5
+2025-10-16 20:20:34,629 - INFO -   Days: 31
+2025-10-16 20:20:35,302 - INFO - Request ID is 5d88de54-e8b1-42b5-a5c4-913f76372b81
+2025-10-16 20:20:35,674 - INFO - status has been updated to accepted
+2025-10-16 20:21:03,023 - INFO - status has been updated to running
+2025-10-16 20:22:01,035 - INFO - status has been updated to successful
+2025-10-16 20:22:01,887 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/e838e72fb50aeabfe1244874e06b0caa.nc
+2025-10-16 20:22:06,928 - INFO - ✓ Downloaded era5_pressure_2020_01.nc: 1.2 MB in 92.3s
+2025-10-16 20:22:11,886 - INFO - Downloading era5_surface_2020_01.nc...
+2025-10-16 20:22:11,886 - INFO -   Variables: 5
+2025-10-16 20:22:11,886 - INFO -   Days: 31
+2025-10-16 20:22:12,930 - INFO - Request ID is ee214db7-78ff-496a-b309-17f97b82c67d
+2025-10-16 20:22:13,257 - INFO - status has been updated to accepted
+2025-10-16 20:24:54,306 - INFO - Test mode: downloading January 2020 only
+2025-10-16 20:24:54,306 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:24:54,309 - INFO - Configuration loaded successfully
+2025-10-16 20:24:55,252 - INFO - CDS API client initialized successfully
+2025-10-16 20:24:55,253 - INFO - Download configuration:
+2025-10-16 20:24:55,253 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:24:55,253 - INFO -   Years: 2020-2020
+2025-10-16 20:24:55,253 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:24:55,253 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:24:57,256 - ERROR - ✗ Failed to download era5_surface_2020_01.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:25:10,214 - ERROR - ✗ Failed to download era5_pressure_2020_02.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:25:20,223 - ERROR - ✗ Failed to download era5_pressure_2020_03.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:25:30,231 - ERROR - ✗ Failed to download era5_pressure_2020_04.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:25:40,237 - ERROR - ✗ Failed to download era5_pressure_2020_05.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:25:53,206 - ERROR - ✗ Failed to download era5_pressure_2020_06.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:03,208 - ERROR - ✗ Failed to download era5_pressure_2020_07.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:13,216 - ERROR - ✗ Failed to download era5_pressure_2020_08.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:26,178 - ERROR - ✗ Failed to download era5_pressure_2020_09.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:36,187 - ERROR - ✗ Failed to download era5_pressure_2020_10.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:46,196 - ERROR - ✗ Failed to download era5_pressure_2020_11.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:26:59,161 - ERROR - ✗ Failed to download era5_pressure_2020_12.nc: LegacyClient.retrieve() got an unexpected keyword argument 'progress_callback'
+2025-10-16 20:27:57,039 - INFO - Test mode: downloading January 2020 only
+2025-10-16 20:27:57,039 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:27:57,042 - INFO - Configuration loaded successfully
+2025-10-16 20:27:57,915 - INFO - CDS API client initialized successfully
+2025-10-16 20:27:57,915 - INFO - Download configuration:
+2025-10-16 20:27:57,915 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:27:57,915 - INFO -   Years: 2020-2020
+2025-10-16 20:27:57,915 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:27:57,916 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:28:02,028 - INFO - Request ID is 313df15e-ae42-48cb-aed9-35822f05af9f
+2025-10-16 20:28:02,338 - INFO - status has been updated to accepted
+2025-10-16 20:32:25,677 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:32:25,680 - INFO - Configuration loaded successfully
+2025-10-16 20:32:26,577 - INFO - CDS API client initialized successfully
+2025-10-16 20:32:26,577 - INFO - Download configuration:
+2025-10-16 20:32:26,577 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:32:26,577 - INFO -   Years: 2010-2020
+2025-10-16 20:32:26,577 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:32:26,577 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:32:27,250 - INFO - Request ID is 2240c438-5ebd-4cab-b4b5-894c203a9408
+2025-10-16 20:32:27,558 - INFO - status has been updated to accepted
+2025-10-16 20:50:20,451 - INFO - Test mode: downloading January 2020 only
+2025-10-16 20:50:20,452 - INFO - Starting ERA5 monthly download for Adelaide weather forecasting
+2025-10-16 20:50:20,456 - INFO - Configuration loaded successfully
+2025-10-16 20:50:21,424 - INFO - CDS API client initialized successfully
+2025-10-16 20:50:21,424 - INFO - Download configuration:
+2025-10-16 20:50:21,424 - INFO -   Area: [-32.4, 136.1, -37.4, 141.1]
+2025-10-16 20:50:21,424 - INFO -   Years: 2020-2020
+2025-10-16 20:50:21,424 - INFO -   Pressure variables: ['geopotential', 'temperature', 'specific_humidity', 'u_component_of_wind', 'v_component_of_wind']
+2025-10-16 20:50:21,424 - INFO -   Surface variables: ['10m_u_component_of_wind', '10m_v_component_of_wind', '2m_temperature', 'total_precipitation', 'mean_sea_level_pressure']
+2025-10-16 20:50:24,440 - INFO - Request ID is f4d5c8ac-1d2a-408d-a496-2b65a928c38f
+2025-10-16 20:50:24,761 - INFO - status has been updated to accepted
+2025-10-16 20:50:38,649 - INFO - status has been updated to running
+2025-10-16 20:50:44,038 - INFO - status has been updated to successful
+2025-10-16 20:50:44,607 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/c8dbae592836cef08ef796ce4da7a6e5.zip
+2025-10-16 20:50:47,843 - INFO - ✓ Downloaded era5_surface_2020_01.nc: 0.6 MB in 24.4s (0.02 MB/s)
+2025-10-16 20:50:50,511 - INFO - Request ID is 9188842d-5176-4c0e-9813-4824ec92ccf6
+2025-10-16 20:50:50,818 - INFO - status has been updated to accepted
+2025-10-16 20:51:50,183 - INFO - status has been updated to running
+2025-10-16 20:52:16,159 - INFO - status has been updated to successful
+2025-10-16 20:52:19,712 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/bf6d6245b650b0fb16aefdfabd69cf02.nc
+2025-10-16 20:52:23,320 - INFO - ✓ Downloaded era5_pressure_2020_02.nc: 1.2 MB in 93.5s (0.01 MB/s)
+2025-10-16 20:52:26,555 - INFO - Request ID is 8d637650-103d-4931-93b1-0686771adacb
+2025-10-16 20:52:26,964 - INFO - status has been updated to accepted
+2025-10-16 20:54:33,228 - INFO - status has been updated to running
+2025-10-16 20:55:37,945 - INFO - status has been updated to successful
+2025-10-16 20:55:38,806 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/fec7ceac88d57e2d58ed092874e2df03.zip
+2025-10-16 20:55:42,302 - INFO - ✓ Downloaded era5_surface_2020_02.nc: 0.6 MB in 197.0s (0.00 MB/s)
+2025-10-16 20:55:45,108 - INFO - Request ID is 55b86bcb-e777-41b0-af52-b92b659e736a
+2025-10-16 20:55:45,772 - INFO - status has been updated to accepted
+2025-10-16 20:57:13,927 - INFO - status has been updated to running
+2025-10-16 20:57:55,666 - INFO - status has been updated to successful
+2025-10-16 20:57:56,278 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/ab48787deebd6d87ab5cb0f064afb24.nc
+2025-10-16 20:57:59,777 - INFO - ✓ Downloaded era5_pressure_2020_03.nc: 1.2 MB in 135.5s (0.01 MB/s)
+2025-10-16 20:58:02,769 - INFO - Request ID is 205a03e7-067f-4afe-acca-82179271b63d
+2025-10-16 20:58:03,076 - INFO - status has been updated to accepted
+2025-10-16 21:05:02,609 - INFO - status has been updated to successful
+2025-10-16 21:05:03,246 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/8f90fe5fc1f7e87699adf9294ad3c94e.zip
+2025-10-16 21:05:06,862 - INFO - ✓ Downloaded era5_surface_2020_03.nc: 0.6 MB in 425.1s (0.00 MB/s)
+2025-10-16 21:05:09,988 - INFO - Request ID is d60b5eea-e00c-4e08-b834-061e5f85d392
+2025-10-16 21:05:10,725 - INFO - status has been updated to accepted
+2025-10-16 21:14:27,290 - INFO - status has been updated to successful
+2025-10-16 21:14:28,487 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/85bb73a9e460d2e8417f438c6a9fb16e.nc
+2025-10-16 21:14:31,782 - INFO - ✓ Downloaded era5_pressure_2020_04.nc: 1.2 MB in 562.9s (0.00 MB/s)
+2025-10-16 21:14:34,890 - INFO - Request ID is a115344b-1157-4908-aec0-7a97362dda0d
+2025-10-16 21:14:35,182 - INFO - status has been updated to accepted
+2025-10-16 21:26:12,445 - INFO - status has been updated to successful
+2025-10-16 21:26:13,216 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/e564ad72d0770f23fcb17ea93b7156aa.zip
+2025-10-16 21:26:16,334 - INFO - ✓ Downloaded era5_surface_2020_04.nc: 0.6 MB in 702.6s (0.00 MB/s)
+2025-10-16 21:26:19,137 - INFO - Request ID is 50eae305-69fe-4e9b-87b6-a699fcdf4916
+2025-10-16 21:26:19,614 - INFO - status has been updated to accepted
+2025-10-16 21:40:09,724 - INFO - status has been updated to running
+2025-10-16 21:42:25,213 - INFO - status has been updated to successful
+2025-10-16 21:42:25,797 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/a5645c113014d5f7b424731a21104a54.nc
+2025-10-16 21:42:29,533 - INFO - ✓ Downloaded era5_pressure_2020_05.nc: 1.2 MB in 971.2s (0.00 MB/s)
+2025-10-16 21:42:32,516 - INFO - Request ID is ffb872ff-3d4d-4fde-8f13-b712f4693253
+2025-10-16 21:42:33,857 - INFO - status has been updated to accepted
+2025-10-16 21:56:24,094 - INFO - status has been updated to successful
+2025-10-16 21:56:24,697 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/8a8fd3faa27144ce727f0cd7aa870360.zip
+2025-10-16 21:56:28,997 - INFO - ✓ Downloaded era5_surface_2020_05.nc: 0.6 MB in 837.5s (0.00 MB/s)
+2025-10-16 21:56:31,613 - INFO - Request ID is 877e3bb3-410e-445f-9caa-3ac981832cea
+2025-10-16 21:56:31,941 - INFO - status has been updated to accepted
+2025-10-16 22:08:10,602 - INFO - status has been updated to successful
+2025-10-16 22:08:11,191 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/ae37077d407a362acc9094b1067a08d8.nc
+2025-10-16 22:08:15,248 - INFO - ✓ Downloaded era5_pressure_2020_06.nc: 1.2 MB in 704.2s (0.00 MB/s)
+2025-10-16 22:08:18,427 - INFO - Request ID is 005de76c-a76a-45e0-b641-f2250ec1a716
+2025-10-16 22:08:18,752 - INFO - status has been updated to accepted
+2025-10-16 22:15:27,435 - INFO - status has been updated to running
+2025-10-16 22:17:39,676 - INFO - status has been updated to successful
+2025-10-16 22:17:44,048 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/2efefae3aaf9c0f29aefa987ff34e280.zip
+2025-10-16 22:17:47,515 - INFO - ✓ Downloaded era5_surface_2020_06.nc: 0.6 MB in 570.3s (0.00 MB/s)
+2025-10-16 22:17:50,436 - INFO - Request ID is 3f0c4606-bd37-40cf-8e2d-a78fd43d14d5
+2025-10-16 22:17:50,737 - INFO - status has been updated to accepted
+2025-10-16 22:22:43,206 - INFO - status has been updated to running
+2025-10-16 22:24:58,786 - INFO - status has been updated to successful
+2025-10-16 22:24:59,687 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/ca1f7557cdba663e8c8475a9476e89c1.nc
+2025-10-16 22:25:06,892 - INFO - ✓ Downloaded era5_pressure_2020_07.nc: 1.2 MB in 437.4s (0.00 MB/s)
+2025-10-16 22:25:10,218 - INFO - Request ID is 7ca63aca-814c-4c03-b9cd-3d29e7162eb1
+2025-10-16 22:25:10,786 - INFO - status has been updated to accepted
+2025-10-16 22:30:02,616 - INFO - status has been updated to successful
+2025-10-16 22:30:03,347 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/4858cd17f086184c3e8e97b1de2feffa.zip
+2025-10-16 22:30:06,895 - INFO - ✓ Downloaded era5_surface_2020_07.nc: 0.6 MB in 298.0s (0.00 MB/s)
+2025-10-16 22:30:10,059 - INFO - Request ID is 9e7002c0-428b-4fa8-8469-e13ee9d6810c
+2025-10-16 22:30:10,666 - INFO - status has been updated to accepted
+2025-10-16 22:37:19,430 - INFO - status has been updated to running
+2025-10-16 22:39:35,485 - INFO - status has been updated to successful
+2025-10-16 22:39:36,259 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/998c6c277fec0b661f94d23376f4a5e1.nc
+2025-10-16 22:39:41,717 - INFO - ✓ Downloaded era5_pressure_2020_08.nc: 1.2 MB in 572.8s (0.00 MB/s)
+2025-10-16 22:39:45,503 - INFO - Request ID is b9632081-60ff-4a05-83d6-dee21a5db553
+2025-10-16 22:39:45,995 - INFO - status has been updated to accepted
+2025-10-16 22:43:04,101 - INFO - status has been updated to running
+2025-10-16 22:45:45,697 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-16 22:45:45,697 - WARNING - Retrying in 120 seconds
+2025-10-16 22:48:00,257 - INFO - Retrying now...
+2025-10-16 22:48:01,320 - INFO - status has been updated to successful
+2025-10-16 22:48:01,947 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/58a018d97864231ee54518ea5a2b8169.zip
+2025-10-16 22:48:05,360 - INFO - ✓ Downloaded era5_surface_2020_08.nc: 0.6 MB in 501.6s (0.00 MB/s)
+2025-10-16 22:48:08,313 - INFO - Request ID is 9b3567db-4ef3-4e3c-8f70-cdf056bcc420
+2025-10-16 22:48:08,674 - INFO - status has been updated to accepted
+2025-10-16 22:55:16,896 - INFO - status has been updated to running
+2025-10-16 22:57:32,423 - INFO - status has been updated to successful
+2025-10-16 22:57:33,076 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-1/2025-10-16/bd29492cd274ef8f5738956e41ddd768.nc
+2025-10-16 22:57:37,438 - INFO - ✓ Downloaded era5_pressure_2020_09.nc: 1.2 MB in 570.1s (0.00 MB/s)
+2025-10-16 22:57:41,833 - INFO - Request ID is 20249d7a-ee8c-4a8f-af06-f5221c4a996f
+2025-10-16 22:57:42,131 - INFO - status has been updated to accepted
+2025-10-16 23:22:43,812 - INFO - status has been updated to successful
+2025-10-16 23:22:44,518 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/6cbc870148c4f8bcfc69949839539708.zip
+2025-10-16 23:22:47,620 - INFO - ✓ Downloaded era5_surface_2020_09.nc: 0.6 MB in 1508.2s (0.00 MB/s)
+2025-10-16 23:22:50,369 - INFO - Request ID is ec0a5a98-b1f3-4d8f-81c2-77b3b13290c3
+2025-10-16 23:22:50,656 - INFO - status has been updated to accepted
+2025-10-17 00:08:43,991 - INFO - status has been updated to successful
+2025-10-17 00:08:44,605 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/80055ea4021a72c6e4c1366c7f157324.nc
+2025-10-17 00:08:48,112 - INFO - ✓ Downloaded era5_pressure_2020_10.nc: 1.2 MB in 2758.5s (0.00 MB/s)
+2025-10-17 00:08:51,150 - INFO - Request ID is 08c2dfb4-ad35-4248-8f19-efb4101090af
+2025-10-17 00:08:51,452 - INFO - status has been updated to accepted
+2025-10-17 00:09:09,292 - INFO - status has been updated to running
+2025-10-17 00:10:18,516 - INFO - status has been updated to successful
+2025-10-17 00:10:19,126 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/7341a7eefa4e31d0f68dfaa0846f20a.zip
+2025-10-17 00:10:22,444 - INFO - ✓ Downloaded era5_surface_2020_10.nc: 0.6 MB in 92.3s (0.01 MB/s)
+2025-10-17 00:10:25,475 - INFO - Request ID is bd82211b-2f10-4ea6-953e-0a33cd63926b
+2025-10-17 00:10:25,865 - INFO - status has been updated to accepted
+2025-10-17 00:22:54,560 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 00:22:54,560 - WARNING - Retrying in 120 seconds
+2025-10-17 00:25:09,078 - INFO - Retrying now...
+2025-10-17 00:34:08,678 - INFO - status has been updated to running
+2025-10-17 00:36:24,084 - INFO - status has been updated to successful
+2025-10-17 00:36:24,701 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/f5fc7bdc38af456ac346c4cd77b68945.nc
+2025-10-17 00:36:28,270 - INFO - ✓ Downloaded era5_pressure_2020_11.nc: 1.2 MB in 1563.8s (0.00 MB/s)
+2025-10-17 00:36:31,350 - INFO - Request ID is 742a21a6-6a59-4b26-a3d5-2caa08233978
+2025-10-17 00:36:31,647 - INFO - status has been updated to accepted
+2025-10-17 00:51:28,083 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 00:51:28,084 - WARNING - Retrying in 120 seconds
+2025-10-17 00:53:39,006 - INFO - Retrying now...
+2025-10-17 00:57:02,023 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 00:57:02,023 - WARNING - Retrying in 120 seconds
+2025-10-17 00:59:16,563 - INFO - Retrying now...
+2025-10-17 01:06:00,349 - INFO - status has been updated to successful
+2025-10-17 01:06:00,930 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-2/2025-10-16/1c8b6e393635f5fa3a3b83b895cd468a.zip
+2025-10-17 01:06:04,005 - INFO - ✓ Downloaded era5_surface_2020_11.nc: 0.6 MB in 1773.7s (0.00 MB/s)
+2025-10-17 01:06:06,644 - INFO - Request ID is 539f20a8-0b5b-4e33-998e-fc80c5084d99
+2025-10-17 01:06:07,148 - INFO - status has been updated to accepted
+2025-10-17 01:30:01,494 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 01:30:01,494 - WARNING - Retrying in 120 seconds
+2025-10-17 01:32:12,416 - INFO - Retrying now...
+2025-10-17 01:50:09,572 - INFO - status has been updated to successful
+2025-10-17 01:50:10,179 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/f53d692edd871798e45e56e7bc05d2e9.nc
+2025-10-17 01:51:16,201 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='object-store.os-api.cci2.ecmwf.int', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 01:51:16,201 - WARNING - Retrying in 120 seconds
+2025-10-17 01:53:21,223 - INFO - Retrying now...
+2025-10-17 01:53:21,224 - INFO - Downloading https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-cache-3/2025-10-16/f53d692edd871798e45e56e7bc05d2e9.nc
+2025-10-17 01:53:24,889 - INFO - ✓ Downloaded era5_pressure_2020_12.nc: 1.2 MB in 2838.9s (0.00 MB/s)
+2025-10-17 01:54:29,333 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 01:54:29,333 - WARNING - Retrying in 120 seconds
+2025-10-17 01:56:32,093 - INFO - Retrying now...
+2025-10-17 01:56:34,716 - INFO - Request ID is 5d44d573-42d0-41ca-bc18-f1adb7884637
+2025-10-17 01:56:35,022 - INFO - status has been updated to accepted
+2025-10-17 02:44:45,456 - WARNING - Recovering from connection error [HTTPSConnectionPool(host='cds.climate.copernicus.eu', port=443): Read timed out. (read timeout=60)], attempt 1 of 500
+2025-10-17 02:44:45,456 - WARNING - Retrying in 120 seconds
+2025-10-17 02:46:45,556 - INFO - Retrying now...
+2025-10-17 08:02:14,691 - ERROR - ✗ Failed to download era5_surface_2020_12.nc: 404 Client Error: Not Found for url: https://cds.climate.copernicus.eu/api/retrieve/v1/jobs/5d44d573-42d0-41ca-bc18-f1adb7884637?log=True&request=True
+job not found
+job 5d44d573-42d0-41ca-bc18-f1adb7884637 deleted
+2025-10-17 08:02:24,704 - INFO - 
+=== Converting to Zarr format ===
+2025-10-17 08:02:24,705 - INFO - Converting 12 NetCDF files to Zarr...
+2025-10-17 08:02:24,705 - INFO - Processing era5_pressure_2020_01.nc...
+2025-10-17 08:02:25,012 - INFO - Processing era5_pressure_2020_02.nc...
+2025-10-17 08:02:25,039 - INFO - Processing era5_pressure_2020_03.nc...
+2025-10-17 08:02:25,062 - INFO - Processing era5_pressure_2020_04.nc...
+2025-10-17 08:02:25,078 - INFO - Processing era5_pressure_2020_05.nc...
+2025-10-17 08:02:25,099 - INFO - Processing era5_pressure_2020_06.nc...
+2025-10-17 08:02:25,113 - INFO - Processing era5_pressure_2020_07.nc...
+2025-10-17 08:02:25,124 - INFO - Processing era5_pressure_2020_08.nc...
+2025-10-17 08:02:25,137 - INFO - Processing era5_pressure_2020_09.nc...
+2025-10-17 08:02:25,149 - INFO - Processing era5_pressure_2020_10.nc...
+2025-10-17 08:02:25,169 - INFO - Processing era5_pressure_2020_11.nc...
+2025-10-17 08:02:25,183 - INFO - Processing era5_pressure_2020_12.nc...
+2025-10-17 08:02:25,194 - INFO - Combining datasets...
+2025-10-17 08:02:26,301 - INFO - Saving to Zarr: /home/micha/weather-forecast/data/era5/zarr/era5_pressure_levels.zarr
+2025-10-17 08:02:26,477 - ERROR - ✗ Zarr conversion failed: bad compressor; expected Codec object, found 'lz4'
+2025-10-17 08:02:26,483 - INFO - 
+============================================================
+2025-10-17 08:02:26,483 - INFO - ERA5 Monthly Download Summary
+2025-10-17 08:02:26,483 - INFO - ============================================================
+2025-10-17 08:02:26,483 - INFO - Successful pressure downloads: 12
+2025-10-17 08:02:26,483 - INFO - Successful surface downloads: 11
+2025-10-17 08:02:26,483 - INFO - Failed downloads: 1
+2025-10-17 08:02:26,483 - INFO - Failed downloads:
+2025-10-17 08:02:26,483 - INFO -   2020-12: 404 Client Error: Not Found for url: https://cds.climate.copernicus.eu/api/retrieve/v1/jobs/5d44d573-42d0-41ca-bc18-f1adb7884637?log=True&request=True
+job not found
+job 5d44d573-42d0-41ca-bc18-f1adb7884637 deleted
+2025-10-17 08:02:26,483 - INFO - ERA5 monthly download process completed

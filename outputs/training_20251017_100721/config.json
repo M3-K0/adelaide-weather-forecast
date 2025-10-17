@@ -1,0 +1,17 @@
+{
+  "surface_zarr": "data/era5/zarr/era5_surface_2010_2020.zarr",
+  "pressure_zarr": "data/era5/zarr/era5_pressure_2010_2019.zarr",
+  "val_split": 0.1,
+  "model_config": "configs/model.yaml",
+  "batch_size": 128,
+  "num_epochs": 150,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "temperature": 0.07,
+  "mixed_precision": true,
+  "num_workers": 0,
+  "pin_memory": false,
+  "save_every": 10,
+  "use_wandb": false,
+  "output_dir": "outputs/training_20251017_100721"
+}

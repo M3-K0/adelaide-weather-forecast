@@ -1,0 +1,130 @@
+2025-10-16 20:18:17,279 - INFO - Starting ERA5 data download for Adelaide weather forecasting
+2025-10-16 20:18:18,270 - INFO - CDS API client initialized successfully
+2025-10-16 20:18:18,270 - INFO - Processing year 2010...
+2025-10-16 20:18:18,270 - INFO - Downloading ERA5 pressure levels for 2010...
+2025-10-16 20:18:21,800 - ERROR - Failed to download pressure levels for 2010: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:21,800 - ERROR - ✗ Failed to process 2010: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:21,800 - INFO - Processing year 2011...
+2025-10-16 20:18:21,800 - INFO - Downloading ERA5 pressure levels for 2011...
+2025-10-16 20:18:22,399 - ERROR - Failed to download pressure levels for 2011: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:22,399 - ERROR - ✗ Failed to process 2011: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:22,399 - INFO - Processing year 2012...
+2025-10-16 20:18:22,399 - INFO - Downloading ERA5 pressure levels for 2012...
+2025-10-16 20:18:23,135 - ERROR - Failed to download pressure levels for 2012: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:23,135 - ERROR - ✗ Failed to process 2012: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:23,135 - INFO - Processing year 2013...
+2025-10-16 20:18:23,135 - INFO - Downloading ERA5 pressure levels for 2013...
+2025-10-16 20:18:23,717 - ERROR - Failed to download pressure levels for 2013: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:23,717 - ERROR - ✗ Failed to process 2013: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:23,717 - INFO - Processing year 2014...
+2025-10-16 20:18:23,717 - INFO - Downloading ERA5 pressure levels for 2014...
+2025-10-16 20:18:24,317 - ERROR - Failed to download pressure levels for 2014: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:24,317 - ERROR - ✗ Failed to process 2014: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:24,317 - INFO - Processing year 2015...
+2025-10-16 20:18:24,317 - INFO - Downloading ERA5 pressure levels for 2015...
+2025-10-16 20:18:25,827 - ERROR - Failed to download pressure levels for 2015: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:25,827 - ERROR - ✗ Failed to process 2015: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:25,827 - INFO - Processing year 2016...
+2025-10-16 20:18:25,827 - INFO - Downloading ERA5 pressure levels for 2016...
+2025-10-16 20:18:26,573 - ERROR - Failed to download pressure levels for 2016: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:26,573 - ERROR - ✗ Failed to process 2016: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:26,573 - INFO - Processing year 2017...
+2025-10-16 20:18:26,573 - INFO - Downloading ERA5 pressure levels for 2017...
+2025-10-16 20:18:27,347 - ERROR - Failed to download pressure levels for 2017: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:27,347 - ERROR - ✗ Failed to process 2017: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:27,347 - INFO - Processing year 2018...
+2025-10-16 20:18:27,347 - INFO - Downloading ERA5 pressure levels for 2018...
+2025-10-16 20:18:27,920 - ERROR - Failed to download pressure levels for 2018: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:27,920 - ERROR - ✗ Failed to process 2018: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:27,920 - INFO - Processing year 2019...
+2025-10-16 20:18:27,920 - INFO - Downloading ERA5 pressure levels for 2019...
+2025-10-16 20:18:28,588 - ERROR - Failed to download pressure levels for 2019: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:28,588 - ERROR - ✗ Failed to process 2019: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:28,588 - INFO - Processing year 2020...
+2025-10-16 20:18:28,588 - INFO - Downloading ERA5 pressure levels for 2020...
+2025-10-16 20:18:29,269 - ERROR - Failed to download pressure levels for 2020: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - ERROR - ✗ Failed to process 2020: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO - 
+============================================================
+2025-10-16 20:18:29,269 - INFO - ERA5 Download Summary
+2025-10-16 20:18:29,269 - INFO - ============================================================
+2025-10-16 20:18:29,269 - INFO - Successful downloads: 0
+2025-10-16 20:18:29,269 - INFO - Failed downloads: 11
+2025-10-16 20:18:29,269 - INFO -   2010: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2011: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2012: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2013: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2014: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2015: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2016: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2017: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2018: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2019: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO -   2020: 403 Client Error: Forbidden for url: https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-pressure-levels/execution
+cost limits exceeded
+Your request is too large, please reduce your selection.
+2025-10-16 20:18:29,269 - INFO - ERA5 download process completed
